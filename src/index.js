@@ -2,4 +2,6 @@ function hello(name) {
   document.body.textContent = "Hello, " + name + "!"
 }
 
-hello("World")
+hello('pootan!');
+
+hello("World");
