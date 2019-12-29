@@ -3,5 +3,8 @@ function hello(name) {
 }
 
 hello('pootan!');
+hello('pootan!');
+hello('pootan!');
+hello('pootan!');
 
 hello("World");
