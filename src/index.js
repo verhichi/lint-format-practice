@@ -6,5 +6,7 @@ hello('pootan!');
 hello('pootan!');
 hello('pootan!');
 hello('pootan!');
+hello('pootan!');
+hello('pootan!');
 
 hello("World");
