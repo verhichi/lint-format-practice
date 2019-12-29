@@ -1,0 +1,30 @@
+name: Node CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-16.04
+    
+    steps:
+    - uses: actions/checkout@v1
+      
+    - name: Use Node.js 12.14.0
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.14.0
+
+    - name: lint
+      run: |
+        npm ci
+        npm run fix
+        
+    - name: commit changes
+      uses: EndBug/add-and-commit@v2
+      with:
+        author_name: verhichi
+        author_email: verhichi@hotmail.com
+        message: eslint + prettier format
+        path: "."
+        pattern: "*.js"
