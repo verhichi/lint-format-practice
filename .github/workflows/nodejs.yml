@@ -28,3 +28,5 @@ jobs:
         message: eslint + prettier format
         path: "."
         pattern: "*.js"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
