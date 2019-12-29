@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "npx eslint --ext .js src/",
-    "fix-dry": "npx eslint --fix-dry-run --ext .js src/",
-    "fix": "npx eslint --fix --ext .js src/",
+    "lint": "npx eslint --ext .js src/**",
+    "fix-dry": "npx eslint --fix-dry-run --ext .js src/**",
+    "fix": "npx eslint --fix --ext .js src/**",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
