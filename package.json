@@ -1,0 +1,21 @@
+{
+  "name": "lint-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint --ext .js src/",
+    "fix-dry": "npx eslint --fix-dry-run --ext .js src/",
+    "fix": "npx eslint --fix --ext .js src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "husky": "^3.1.0"
+  }
+}
