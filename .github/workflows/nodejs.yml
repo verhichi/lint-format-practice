@@ -18,14 +18,14 @@ jobs:
     - name: lint
       run: |
         npm ci
-        npm run fix
+        eslint "src/**" --fix
         
-    - name: commit changes
-      uses: EndBug/add-and-commit@v2
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v2.3.1
       with:
         author_name: verhichi
         author_email: verhichi@hotmail.com
-        message: eslint + prettier format
+        message: "eslint + prettier format"
         path: "."
         pattern: "*.js"
       env:
